@@ -179,6 +179,9 @@ PRODUCT_PACKAGES += \
     lowi.conf \
     sap.conf
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf
+
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
     gnss@2.0-xtra-daemon.policy \
