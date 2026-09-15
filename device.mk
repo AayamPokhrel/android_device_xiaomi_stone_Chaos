@@ -230,7 +230,7 @@ PRODUCT_PACKAGES += \
 
 # IR
 PRODUCT_PACKAGES += \
-    android.hardware.ir-service.lineage
+    android.hardware.ir-service.xiaomi
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := true
