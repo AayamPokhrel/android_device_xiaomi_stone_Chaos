@@ -16,8 +16,12 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 ## Add extras here
+
 # ART Userfaultfd Garbage Collection
 PRODUCT_ENABLE_UFFD_GC := true
+
+# Graphene apps
+TARGET_BUILD_GRAPHENEAPPS := true
 
 PRODUCT_PACKAGES_REMOVE += \
     Aperture
