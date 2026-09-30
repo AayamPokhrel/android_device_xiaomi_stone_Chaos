@@ -16,5 +16,7 @@ android_app {
 
     static_libs: [
         "co.aospa.resources",
+        "SettingsLib",
+        "com.google.android.material_material",
     ],
 }
