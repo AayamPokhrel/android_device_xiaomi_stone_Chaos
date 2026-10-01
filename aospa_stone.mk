@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 
 # Graphene apps
 TARGET_BUILD_GRAPHENEAPPS := true
+$(call inherit-product-if-exists, vendor/vendor_graphene/grapheneos.mk)
 
 PRODUCT_PACKAGES_REMOVE += \
     Aperture
