@@ -156,6 +156,11 @@ PRODUCT_PACKAGES += \
 USE_DEX2OAT_DEBUG := false
 WITH_DEXPREOPT_DEBUG_INFO := false
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+PRODUCT_PACKAGES += \
+    DolbyAtmos
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
