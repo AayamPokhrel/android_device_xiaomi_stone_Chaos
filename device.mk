@@ -202,6 +202,23 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
+# Logging
+SPAMMY_LOG_TAGS := \
+    SDM \
+    SDM-histogram \
+    WifiHAL \
+    cnss-daemon \
+    sensors \
+    sensors-hal \
+    vendor.qti.bluetooth@1.0-ibs_handler \
+    vendor.qti.bluetooth@1.0-wake_lock \
+    vendor.qti.hardware.display.composer-service
+
+ifneq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_VENDOR_PROPERTIES += \
+    $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
+endif
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
