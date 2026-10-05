@@ -1224,6 +1224,12 @@ vendor/etc/sensors/config/strait_qrd_tmd2725.json
 vendor/etc/sensors/config/strait_tmd2725.json
 vendor/etc/sensors/sns_reg_config
 
+# ServiceTracker
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
+
 # Snapdragon Computer Vision Engine
 vendor/lib64/libcvp_common.so
 vendor/lib64/libcvpcpuRev_skel.so
