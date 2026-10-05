@@ -9,6 +9,8 @@
 #include <stdint.h>
 #include <log/log.h>
 
+#include <functional>
+
 extern "C" void perf_get_feedback() {}
 extern "C" void perf_hint() {}
 extern "C" int perf_lock_acq(int handle, int duration, int arg3[], int arg4) {
@@ -28,3 +30,24 @@ extern "C" int perf_lock_rel(int handle) {
     return 233;
 }
 extern "C" void perf_lock_use_profile() {}
+
+class PerfThreadPool {
+public:
+    static PerfThreadPool singleton_pool_obj;
+    int create(int);
+    int placeTask(std::function<void()>&&);
+};
+
+PerfThreadPool PerfThreadPool::singleton_pool_obj;
+
+int PerfThreadPool::create(int) {
+    return 0;
+}
+
+int PerfThreadPool::placeTask(std::function<void()>&& task) {
+    if (task) {
+        task();
+    }
+    return 0;
+}
+
