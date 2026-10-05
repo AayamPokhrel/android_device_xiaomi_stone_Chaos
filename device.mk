@@ -6,6 +6,9 @@
 
 # Platform
 TARGET_BOARD_PLATFORM := holi
+TARGET_KERNEL_VERSION := 5.4
+TARGET_USES_NQ_NFC := false
+TARGET_USES_ST_NFC := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 include vendor/qcom/opensource/core-utils/build/utils.mk
 $(call inherit-product, device/qcom/common/common.mk)
