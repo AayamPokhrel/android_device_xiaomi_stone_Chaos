@@ -23,11 +23,6 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 # Inherit common AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
-# Face Biometrics (AIDL Virtual HAL)
-PRODUCT_PACKAGES += \
-    com.android.hardware.biometrics.face.virtual \
-    android.hardware.biometrics.face-service.default
-
 # Camelot (PDF Viewer)
 PRODUCT_PACKAGES += \
     Camelot \
