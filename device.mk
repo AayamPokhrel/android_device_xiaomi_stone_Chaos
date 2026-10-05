@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Platform
+# Custom targets 
 TARGET_BOARD_PLATFORM := holi
 TARGET_KERNEL_VERSION := 5.4
 TARGET_USES_NQ_NFC := false
@@ -12,6 +12,7 @@ TARGET_USES_ST_NFC := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 include vendor/qcom/opensource/core-utils/build/utils.mk
 $(call inherit-product, device/qcom/common/common.mk)
+PRODUCT_SOURCE_ROOT_DIRS += -hardware/xiaomi/dolby
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
