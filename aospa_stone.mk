@@ -35,9 +35,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_REMOVE += \
     Aperture
 
-# JamesDSP
-$(call inherit-product-if-exists, packages/apps/JamesDSPManager/config.mk)
-
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
