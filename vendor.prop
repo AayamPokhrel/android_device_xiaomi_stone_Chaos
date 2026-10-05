@@ -227,7 +227,6 @@ ro.launcher.blur.appLaunch=0
 # NFC
 ro.vendor.nfc.repair=1
 ro.vendor.se.type=HCE,UICC
-ro.nfc.port=I2C
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
