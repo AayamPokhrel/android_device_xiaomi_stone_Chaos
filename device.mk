@@ -194,9 +194,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
-    android.hardware.health-service.qti_recovery
-
-PRODUCT_PACKAGES += \
+    android.hardware.health-service.qti_recovery \
     vendor.lineage.health-service.default
 
 $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
