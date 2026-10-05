@@ -1039,7 +1039,7 @@ vendor/lib64/libxml.so
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrilNrd
 vendor/bin/adpl;DISABLE_CHECKELF
-vendor/bin/netmgrd
+vendor/bin/netmgrd;DISABLE_CHECKELF
 vendor/bin/pd-mapper
 vendor/bin/port-bridge
 vendor/bin/qti
