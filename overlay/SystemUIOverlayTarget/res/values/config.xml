@@ -89,6 +89,9 @@
     <!-- Maximum number of notification icons shown in the status bar (excluding overflow dot) -->
     <integer name="max_notif_static_icons">5</integer>
 
+    <!-- Should we vibrate on an icon animation of the shelf -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+
     <!-- Whether to briefly keep the display in ON state when transitioning from
          DOZE_AOD_PAUSED to DOZE_AOD state. -->
     <bool name="config_displayTurnsOnWhenResumingAod">true</bool>
