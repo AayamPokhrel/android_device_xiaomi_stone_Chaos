@@ -453,7 +453,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/qcom/display \
     hardware/qcom/wlan/qcwcn \
-    hardware/xiaomi
+    hardware/xiaomi \
+    vendor/qcom/opensource/data-ipa-cfg-mgr-legacy
 
 # Telephony
 PRODUCT_PACKAGES += \
