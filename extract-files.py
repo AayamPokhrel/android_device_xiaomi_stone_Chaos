@@ -21,6 +21,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/xiaomi/stone',
     'hardware/xiaomi',
+    'vendor/qcom/common/vendor/perf',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
