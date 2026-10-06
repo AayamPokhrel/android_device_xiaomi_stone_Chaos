@@ -68,6 +68,7 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 # Display
 TARGET_SCREEN_DENSITY := 440
 include hardware/qcom/display/config/display-board.mk
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
 # QTI Display
 SOONG_CONFIG_NAMESPACES += qtidisplay
