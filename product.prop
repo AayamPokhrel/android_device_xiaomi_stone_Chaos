@@ -14,5 +14,8 @@ audio.sys.offload.pstimeout.secs=3
 audio.sys.routing.latency=0
 av.offload.enable=true
 
+# Blur
+ro.custom.blur.enable=true
+
 # Cutout
 ro.support_hide_display_cutout=true

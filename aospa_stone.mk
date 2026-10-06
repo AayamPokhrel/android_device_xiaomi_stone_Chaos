@@ -20,6 +20,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Disable full value-adds framework manifest before inheriting common AOSPA
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 
+# Enable system-wide blurs
+TARGET_USES_BLUR := true
+
 # Inherit common AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
