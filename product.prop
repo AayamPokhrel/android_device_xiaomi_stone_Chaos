@@ -19,3 +19,7 @@ ro.custom.blur.enable=true
 
 # Cutout
 ro.support_hide_display_cutout=true
+
+# Games default frame rate
+debug.graphics.game_default_frame_rate.disabled=true
+ro.surface_flinger.game_default_frame_rate_override=120
