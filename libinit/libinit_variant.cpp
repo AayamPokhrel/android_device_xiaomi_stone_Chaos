@@ -41,4 +41,9 @@ void set_variant_props(const variant_info_t variant) {
 
         property_override("ro.build.description", fingerprint_to_description(variant.build_fingerprint));
     }
+
+    if (!variant.soc_model.empty()) {
+        property_override("ro.soc.model", variant.soc_model, true);
+        property_override("ro.soc.manufacturer", "Qualcomm", true);
+    }
 }
