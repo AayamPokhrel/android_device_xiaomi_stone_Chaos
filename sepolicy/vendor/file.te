@@ -3,4 +3,5 @@ type vendor_sysfs_corecontrol, fs_type, sysfs_type;
 
 # Power HAL
 type powerhal_vendor_data_file, file_type, data_file_type;
+type proc_tp_gesture, fs_type, proc_type;
 

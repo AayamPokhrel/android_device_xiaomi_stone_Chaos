@@ -3,6 +3,9 @@ type vendor_sysfs_double_tap, sysfs_type, fs_type;
 allow hal_power_default vendor_sysfs_double_tap:dir search;
 allow hal_power_default vendor_sysfs_double_tap:file rw_file_perms;
 
+allow hal_power_default proc_tp_gesture:file rw_file_perms;
+allow hal_power_default proc_tp_gesture:lnk_file r_file_perms;
+
 allow hal_power_default sysfs:file { open read write };
 
 allow hal_power_default hal_graphics_composer_default:dir search;
