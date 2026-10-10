@@ -174,6 +174,11 @@ SOONG_CONFIG_tinycompress += enable_extended_compress_format loop_compress_read
 SOONG_CONFIG_tinycompress_enable_extended_compress_format := true
 SOONG_CONFIG_tinycompress_loop_compress_read := true
 
+# UFS BSG Framework
+SOONG_CONFIG_NAMESPACES += ufsbsg
+SOONG_CONFIG_ufsbsg += ufsframework
+SOONG_CONFIG_ufsbsg_ufsframework := bsg
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
