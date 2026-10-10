@@ -201,10 +201,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
-    android.hardware.health-service.qti_recovery \
-    android.hardware.health@2.1-impl-defaults
-
-$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
+    android.hardware.health-service.qti_recovery
 
 # Logging
 SPAMMY_LOG_TAGS := \
