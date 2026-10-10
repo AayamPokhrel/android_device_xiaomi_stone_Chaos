@@ -168,6 +168,12 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
+# Tinycompress
+SOONG_CONFIG_NAMESPACES += tinycompress
+SOONG_CONFIG_tinycompress += enable_extended_compress_format loop_compress_read
+SOONG_CONFIG_tinycompress_enable_extended_compress_format := true
+SOONG_CONFIG_tinycompress_loop_compress_read := true
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
