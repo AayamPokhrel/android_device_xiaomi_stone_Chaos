@@ -27,6 +27,9 @@ $(call inherit-product-if-exists, vendor/vendor_graphene/grapheneos.mk)
 PRODUCT_PACKAGES_REMOVE += \
     Aperture
 
+CLOVER_MAINTAINER := AayamPokhrel
+WITH_GMS := false
+
 ## Add extras here end
 
 # Boot animation
