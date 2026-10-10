@@ -15,6 +15,13 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Clover stuff.
 $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
+## Add extras here
+# ART Userfaultfd Garbage Collection
+PRODUCT_ENABLE_UFFD_GC := true
+
+
+## Add extras here end
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
