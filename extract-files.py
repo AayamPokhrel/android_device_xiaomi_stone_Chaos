@@ -27,7 +27,6 @@ namespace_imports = [
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/dataservices',
     'vendor/qcom/opensource/display',
-    'vendor/qcom/common/vendor/perf',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
