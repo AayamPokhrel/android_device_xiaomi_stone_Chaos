@@ -19,6 +19,8 @@ $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 # ART Userfaultfd Garbage Collection
 PRODUCT_ENABLE_UFFD_GC := true
 
+PRODUCT_PACKAGES_REMOVE += \
+    Aperture
 
 ## Add extras here end
 
