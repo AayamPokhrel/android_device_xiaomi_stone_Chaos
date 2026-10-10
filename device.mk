@@ -371,7 +371,6 @@ TARGET_BOARD_PLATFORM := holi
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
