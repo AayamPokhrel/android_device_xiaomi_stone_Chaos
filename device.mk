@@ -269,7 +269,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc-service.st
+    android.hardware.nfc-service.st \
+    init.stnfc.rc
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
