@@ -28,6 +28,9 @@ ro.media.recorder-max-base-layer-fps=60
 tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 
+# BPF
+ro.bpf.kver_override=5.10.239
+
 # Data Modules
 ro.vendor.use_data_netmgrd=true
 persist.vendor.data.mode=concurrent
