@@ -155,6 +155,11 @@ TARGET_USERIMAGES_USE_F2FS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# RMNETCTL
+SOONG_CONFIG_NAMESPACES += rmnetctl
+SOONG_CONFIG_rmnetctl += old_rmnet_data
+SOONG_CONFIG_rmnetctl_old_rmnet_data := true
+
 # Security patch
 BOOT_SECURITY_PATCH := 2026-04-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
