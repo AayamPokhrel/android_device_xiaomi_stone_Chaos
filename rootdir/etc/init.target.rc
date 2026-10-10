@@ -28,6 +28,7 @@
 #
 #
 import /vendor/etc/init/hw/init.qti.kernel.rc
+import /vendor/etc/init/hw/init.stnfc.rc
 
 on early-init
     wait /sys/devices/soc0/soc_id
