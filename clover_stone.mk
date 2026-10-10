@@ -28,7 +28,7 @@ PRODUCT_PACKAGES_REMOVE += \
     Aperture
 
 CLOVER_MAINTAINER := AayamPokhrel
-WITH_GMS := false
+WITH_GMS := True
 
 ## Add extras here end
 
