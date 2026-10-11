@@ -1023,9 +1023,13 @@ vendor/bin/hw/vendor.qti.memory.pasrmanager@1.0-service
 vendor/etc/init/vendor.qti.memory.pasrmanager@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager@1.0-service.xml
 vendor/lib/hw/vendor.qti.memory.pasrmanager@1.0-impl.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib/libpasrutils.so
 vendor/lib64/hw/vendor.qti.memory.pasrmanager@1.0-impl.so
 vendor/lib64/libpasrutils.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service;DISABLE_CHECKELF
@@ -1042,8 +1046,6 @@ vendor/lib/libperfioctl.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib/vendor.qti.memory.pasrmanager@1.1.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmemperfd.so
 vendor/lib64/libmeters.so
@@ -1053,8 +1055,6 @@ vendor/lib64/libperfioctl.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
