@@ -17,6 +17,9 @@ $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 
 ## Add extras here
 
+# Private keys
+include vendor/lineage-priv/keys/keys.mk
+
 # ART Userfaultfd Garbage Collection
 PRODUCT_ENABLE_UFFD_GC := true
 
