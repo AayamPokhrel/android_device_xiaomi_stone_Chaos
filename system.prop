@@ -19,6 +19,9 @@ pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.boot-after-ota=verify
 pm.dexopt.first-boot=quicken
 
+# ADB
+persist.sys.usb.config=adb
+
 # Audio / Media (Generic)
 qcom.hw.aac.encoder=true
 media.aac_51_output_enabled=true
