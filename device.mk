@@ -400,6 +400,7 @@ TARGET_USES_ST_NFC := true
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
@@ -482,6 +483,8 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/clover/interfaces/power-libperfmgr \
     hardware/xiaomi \
     vendor/qcom/opensource/usb/etc \
     hardware/qcom/wlan/qcwcn \
