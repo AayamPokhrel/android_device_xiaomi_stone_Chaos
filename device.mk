@@ -67,7 +67,10 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml \
      $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/audio_policy_volumes.xml \
      $(LOCAL_PATH)/audio/mixer_paths_qrdsku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/mixer_paths_qrdsku1.xml \
-     $(LOCAL_PATH)/audio/mixer_paths_stereo_qrdsku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/mixer_paths_stereo_qrdsku1.xml
+     $(LOCAL_PATH)/audio/mixer_paths_stereo_qrdsku1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/mixer_paths_stereo_qrdsku1.xml \
+     $(LOCAL_PATH)/audio/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/a2dp_audio_policy_configuration.xml \
+     $(LOCAL_PATH)/audio/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/bluetooth_qti_audio_policy_configuration.xml \
+     $(LOCAL_PATH)/audio/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/$(AUDIO_SKU_DIR)/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/holi/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt
