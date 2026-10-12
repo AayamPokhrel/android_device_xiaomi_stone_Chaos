@@ -31,7 +31,10 @@ PRODUCT_PACKAGES_REMOVE += \
     Aperture
 
 CLOVER_MAINTAINER := AayamPokhrel
+
 WITH_GMS := true
+
+TARGET_ENABLE_BLUR := true
 
 ## Add extras here end
 
