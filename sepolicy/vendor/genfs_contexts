@@ -56,3 +56,6 @@ genfscon sysfs /kernel/fastchgtoggle/thermals u:object_r:vendor_sysfs_fastcharge
 
 # Swappiness
 genfscon proc /sys/vm/swappiness u:object_r:vendor_proc_swappiness:s0
+
+# Touchscreen
+genfscon sysfs /devices/platform/soc/4c88000.i2c/i2c-2/2-0038/fts_gesture_mode u:object_r:vendor_sysfs_double_tap:s0
