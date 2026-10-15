@@ -158,8 +158,7 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 
 # Dolby
 $(call inherit-product, hardware/dolby/dolby.mk)
-PRODUCT_PACKAGES += \
-    DolbyAtmos
+TARGET_INCLUDES_OEM_App := true
 
 # Fingerprint
 PRODUCT_PACKAGES += \
