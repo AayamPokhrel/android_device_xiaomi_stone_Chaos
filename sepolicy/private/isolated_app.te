@@ -1,0 +1,3 @@
+# Suppress noisy setattr denials from isolated_app (Chrome extension processes)
+# trying to setattr on app_data_file (component updates like crl-set, ssl configs, etc.)
+dontaudit { isolated_app isolated_app_all } app_data_file:file setattr;

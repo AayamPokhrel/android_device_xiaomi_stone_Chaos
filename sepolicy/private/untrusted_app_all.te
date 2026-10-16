@@ -1,0 +1,2 @@
+# Suppress noisy block_device search denials from apps (e.g. Chrome checking mounts)
+dontaudit untrusted_app_all block_device:dir search;

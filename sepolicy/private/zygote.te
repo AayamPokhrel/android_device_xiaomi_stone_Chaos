@@ -1,0 +1,2 @@
+# Allow zygote to read /proc/sys/kernel/pid_max
+allow zygote proc_pid_max:file r_file_perms;
