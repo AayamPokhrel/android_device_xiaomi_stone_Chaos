@@ -261,7 +261,6 @@ ro.boot.product.vendor.sku=holi
 ro.soc.manufacturer=QTI
 
 # USB
-sys.usb.mtp.batchcancel=1
 vendor.usb.controller=4e00000.dwc3
 vendor.usb.device=4e00000.ssusb
 vendor.usb.diag.func.name=ffs
@@ -274,7 +273,6 @@ vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=0
 
 # WiFi
-wifi.aware.interface=wifi-aware0
 persist.vendor.wifi.debug_level=0
 persist.vendor.wifi.log_level=0
 log.tag.WifiStaIfaceAidlImpl=SUPPRESS

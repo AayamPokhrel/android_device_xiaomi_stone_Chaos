@@ -89,3 +89,9 @@ arm64.memtag.process.system_server=off
 
 # Multi-Gen LRU
 persist.device_config.mglru_native.lru_gen_config=core_and_mm_walk
+
+# USB
+sys.usb.mtp.batchcancel=1
+
+# WiFi
+wifi.aware.interface=wifi-aware0
