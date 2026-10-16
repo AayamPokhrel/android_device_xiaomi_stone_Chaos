@@ -34,9 +34,11 @@ on early-init
     wait /sys/devices/soc0/soc_id
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.early_init.sh
     setprop ro.soc.model ${ro.vendor.qti.soc_model}
-    setprop ro.bpf.kver_override 5.10.239
 
 on init
+    # ART Userfaultfd GC
+    write /proc/sys/vm/unprivileged_userfaultfd 1
+
     # Scheduler uclamp
     mkdir /dev/cpuctl/foreground
     mkdir /dev/cpuctl/background
@@ -238,10 +240,6 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
-service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
-    class core
-    oneshot
-
 on property:sys.boot.hwc=*
     setprop ro.boot.hwc ${sys.boot.hwc}
 on property:sys.boot.cpuid=*
@@ -253,7 +251,7 @@ on property:init.svc.vendor.per_mgr=running
 on property:sys.shutdown.requested=*
     stop vendor.per_proxy
 
-service mi_thermald /system/vendor/bin/mi_thermald
+service mi_thermald /vendor/bin/mi_thermald
     class main
     user root
     group system
