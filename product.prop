@@ -4,7 +4,7 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 af.fast_track_multiplier=1
 audio.deep_buffer.media=true
-audio.offload.buffer.size.kb=64
+audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
@@ -16,10 +16,6 @@ av.offload.enable=true
 
 # Cutout
 ro.support_hide_display_cutout=true
-
-# Dolby & Spatializer
-ro.audio.spatializer_enabled=true
-persist.vendor.audio.auto.scenario=true
 
 # Games default frame rate
 debug.graphics.game_default_frame_rate.disabled=true
