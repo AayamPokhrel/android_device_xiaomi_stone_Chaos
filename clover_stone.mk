@@ -20,6 +20,9 @@ $(call inherit-product, vendor/clover/config/common_full_phone.mk)
 # Private keys
 include vendor/lineage-priv/keys/keys.mk
 
+# hotfix tries
+PRODUCT_VERSION_HOTFIX := 4
+
 # ART Userfaultfd Garbage Collection
 PRODUCT_ENABLE_UFFD_GC := true
 
@@ -34,7 +37,7 @@ CLOVER_MAINTAINER := AayamPokhrel
 
 WITH_GMS := true
 
-TARGET_ENABLE_BLUR := true
+TARGET_ENABLE_BLUR := false
 
 ## Add extras here end
 
