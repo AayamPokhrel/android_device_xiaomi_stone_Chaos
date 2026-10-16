@@ -1,2 +1,6 @@
 # IMEI
 set_prop(rild, vendor_deviceid_prop)
+
+# Suppress harmless default property read denial
+dontaudit rild default_prop:file read;
+

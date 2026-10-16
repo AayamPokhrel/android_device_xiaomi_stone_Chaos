@@ -7,3 +7,7 @@ allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
 
 # Allow access to raw HID devices for dynamic sensors
 allow hal_sensors_default hidraw_device:chr_file rw_file_perms;
+
+# Suppress harmless device directory read audit
+dontaudit hal_sensors_default device:dir read;
+

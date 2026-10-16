@@ -6,3 +6,6 @@ r_dir_file(hal_camera_default, camera_persist_file)
 allow hal_camera_default mnt_vendor_file:dir search;
 
 binder_call(hal_camera_default, system_server)
+
+# Suppress harmless default property read denial (cannot be allowed due to Treble neverallow)
+dontaudit hal_camera_default default_prop:file read;
