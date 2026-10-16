@@ -272,6 +272,9 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    vendor.qti.media.c2@1.0-service \
+    codec2.vendor.base-arm64.policy \
+    codec2.vendor.ext-arm64.policy \
     media_codecs_blair.xml \
     media_codecs_blair_lite.xml \
     media_codecs_performance_blair.xml \

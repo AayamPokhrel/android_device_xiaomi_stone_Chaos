@@ -1,0 +1,51 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "vendor.qti.media.c2@1.0-service",
+    vendor: true,
+    relative_install_path: "hw",
+    compile_multilib: "64",
+
+    init_rc: ["vendor.qti.media.c2@1.0-service.rc"],
+
+    srcs: [
+        "service.cpp",
+    ],
+
+    defaults: [
+        "libcodec2-hidl-defaults@1.0",
+    ],
+
+    shared_libs: [
+        "libavservices_minijail",
+        "libbinder",
+        "libcutils",
+        "libdl",
+        "libhidlbase",
+        "liblog",
+        "libutils",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+}
+
+prebuilt_etc {
+    name: "codec2.vendor.base-arm64.policy",
+    vendor: true,
+    sub_dir: "seccomp_policy",
+    src: "codec2.vendor.base-arm64.policy",
+}
+
+prebuilt_etc {
+    name: "codec2.vendor.ext-arm64.policy",
+    vendor: true,
+    sub_dir: "seccomp_policy",
+    src: "codec2.vendor.ext-arm64.policy",
+}
