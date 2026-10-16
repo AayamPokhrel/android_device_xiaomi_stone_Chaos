@@ -20,7 +20,7 @@ ro.vendor.audio.sdk.fluencetype=none
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.adm.buffering.ms=2
 vendor.audio.enable.mirrorlink=false
-vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.a2dp_offload.enable=false
 vendor.audio.feature.afe_proxy.enable=true
 vendor.audio.feature.anc_headset.enable=false
 vendor.audio.feature.audiozoom.enable=false
@@ -30,6 +30,7 @@ vendor.audio.feature.compress_in.enable=true
 vendor.audio.feature.compress_meta_data.enable=true
 vendor.audio.feature.compr_voip.enable=false
 vendor.audio.feature.concurrent_capture.enable=true
+vendor.audio.feature.custom_stereo.enable=true
 vendor.audio.feature.deepbuffer_as_primary.enable=false
 vendor.audio.feature.display_port.enable=true
 vendor.audio.feature.dsm_feedback.enable=false
@@ -111,16 +112,17 @@ bluetooth.profile.bass.client.enabled=true
 bluetooth.profile.battery.enabled=true
 
 # Bluetooth (Qualcomm Vendor)
-persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.a2dp_offload.disabled=true
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
-persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.enable.splita2dp=false
 persist.vendor.qcom.bluetooth.scram.enabled=false
 persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-ro.bluetooth.a2dp_offload.supported=true
+ro.bluetooth.a2dp_offload.supported=false
 ro.vendor.bluetooth.wipower=false
 
 # Display
