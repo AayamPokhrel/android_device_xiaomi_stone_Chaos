@@ -13,10 +13,6 @@ telephony.lteOnCdmaDevice=1
 
 # Dalvik / ART
 dalvik.vm.dex2oat64.enabled=true
-pm.dexopt.install=quicken
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.boot-after-ota=verify
-pm.dexopt.first-boot=quicken
 
 # ADB
 persist.sys.usb.config=adb
