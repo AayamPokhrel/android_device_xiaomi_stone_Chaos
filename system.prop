@@ -18,16 +18,36 @@ dalvik.vm.dex2oat64.enabled=true
 persist.sys.usb.config=adb
 
 # Audio / Media (Generic)
+persist.audio.button_jack.profile=volume
+persist.audio.button_jack.switch=0
 qcom.hw.aac.encoder=true
 media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
 vendor.mm.enable.qcom_parser=16777215
 persist.mm.enable.prefetch=true
 ro.media.recorder-max-base-layer-fps=60
 tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 
+# Bluetooth
+persist.sys.btstack.absvolfeature=true
+persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.service.bdroid.soc.alwayson=true
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+
 # BPF
 ro.bpf.kver_override=5.10.239
+
+# CNE
+persist.vendor.cne.feature=1
 
 # Data Modules
 ro.vendor.use_data_netmgrd=true
@@ -42,20 +62,16 @@ persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
-# Graphics
+# Graphics / Display
 ro.opengles.version=196610
-debug.sf.enable_hwc_vds=1
+debug.sf.enable_hwc_vds=0
 persist.sys.sf.color_mode=7
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=0
 ro.sf.blurs_are_expensive=1
 ro.launcher.blur.appLaunch=0
 
-# Bluetooth
-ro.bluetooth.emb_wp_mode=false
-ro.bluetooth.wipower=false
-
-# Sensors / Features
+# Sensors / Audio Fluence
 sys.qca1530=detect
 ro.qc.sdk.audio.ssr=false
 ro.qc.sdk.audio.fluencetype=fluence
@@ -75,9 +91,11 @@ ro.incremental.enable=true
 # Misc
 dev.pm.dyn_samplingrate=1
 ro.charger.enable_suspend=1
+persist.debug.coresight.config=stm-events
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 qemu.hw.mainkeys=0
+ro.kernel.qemu.gles=0
 
 # Memory Management
 arm64.memtag.process.system_server=off
