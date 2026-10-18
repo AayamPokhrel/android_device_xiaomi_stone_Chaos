@@ -642,14 +642,14 @@
          alpha compositing functionality in hardware.  If set, the window
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
-    <bool name="config_sf_limitedAlpha">true</bool>
+    <bool name="config_sf_limitedAlpha">false</bool>
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
 
     <!-- Whether WM DisplayContent supports high performance transitions
          (lower-end devices may want to disable) -->
-    <bool name="config_deviceSupportsHighPerfTransitions">false</bool>
+    <bool name="config_deviceSupportsHighPerfTransitions">true</bool>
     
     <!-- Needed for custom rom CPU temp paths -->
     <string name="config_cpu_temp_path">/sys/class/thermal/thermal_zone28/temp</string>
