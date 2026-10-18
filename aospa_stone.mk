@@ -23,6 +23,9 @@ TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 # Enable system-wide blurs
 TARGET_USES_BLUR := true
 
+# signing keys
+include vendor/lineage-priv/keys/keys.mk
+
 # Inherit common AOSPA configuration.
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
