@@ -14,9 +14,6 @@ telephony.lteOnCdmaDevice=1
 # Dalvik / ART
 dalvik.vm.dex2oat64.enabled=true
 
-# ADB
-persist.sys.usb.config=adb
-
 # Audio / Media (Generic)
 persist.audio.button_jack.profile=volume
 persist.audio.button_jack.switch=0
