@@ -77,6 +77,8 @@ ro.charger.enable_suspend=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 qemu.hw.mainkeys=0
+persist.debug.coresight.config=stm-events
+ro.kernel.qemu.gles=0
 
 # Memory Management
 arm64.memtag.process.system_server=off
