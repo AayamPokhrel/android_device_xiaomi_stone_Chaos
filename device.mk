@@ -12,7 +12,10 @@ TARGET_USES_ST_NFC := true
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := false
 include vendor/qcom/opensource/core-utils/build/utils.mk
 $(call inherit-product, device/qcom/common/common.mk)
-PRODUCT_SOURCE_ROOT_DIRS += -hardware/xiaomi/dolby
+PRODUCT_SOURCE_ROOT_DIRS += \
+    -hardware/xiaomi/dolby \
+    -vendor/qcom/common/system \
+    -vendor/qcom/common/vendor/media
 
 # Release config map
 PRODUCT_RELEASE_CONFIG_MAPS += $(LOCAL_PATH)/release/release_config_map.textproto
