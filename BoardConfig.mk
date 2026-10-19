@@ -170,6 +170,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
 -include vendor/aospa/target/board/BoardConfigReservedSize.mk
 include vendor/aospa/target/board/BoardConfigAOSPA.mk
 
@@ -219,7 +220,6 @@ VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/qcom/common/sepolicy/SEPolicy.mk
 include vendor/aospa/sepolicy/sepolicy.mk
 include vendor/aospa/sepolicy/libion/sepolicy.mk
 
