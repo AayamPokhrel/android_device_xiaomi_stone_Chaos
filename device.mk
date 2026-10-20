@@ -63,6 +63,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
+    libbluetooth_audio_session
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
