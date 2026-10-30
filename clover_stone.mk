@@ -37,7 +37,7 @@ CLOVER_MAINTAINER := AayamPokhrel
 
 WITH_GMS := true
 
-TARGET_ENABLE_BLUR := false
+TARGET_ENABLE_BLUR := true
 
 ## Add extras here end
 

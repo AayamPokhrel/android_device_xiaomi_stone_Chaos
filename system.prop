@@ -68,10 +68,10 @@ persist.sys.sf.native_mode=0
 ro.sf.blurs_are_expensive=1
 ro.launcher.blur.appLaunch=0
 
-# Sensors / Audio Fluence
+# Sensors / Features
 sys.qca1530=detect
 ro.qc.sdk.audio.ssr=false
-ro.qc.sdk.audio.fluencetype=fluence
+ro.qc.sdk.audio.fluencetype=none
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
